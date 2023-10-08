@@ -1,7 +1,7 @@
 import requests
 import json
 from geopy.distance import geodesic
-from . import command
+
 
 def get_River_info():
     """ 
@@ -49,7 +49,6 @@ def get_name(x, y):
         if distance < min_distance:
             min_distance = distance
             name = i["river"]
-    name = name +"("+ command.gpt35("你是名翻譯員，請將輸入的河流名稱轉換為正確的英文河流名稱，使用英文", name)+")"
     return name
 
 def caculator_River_info(name):
