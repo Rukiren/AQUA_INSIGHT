@@ -16,8 +16,15 @@ OPENAI_API_KEY = "//Your open api key//"
 6. try it!
 
 ## How to use this web
-![](https://hackmd.io/_uploads/ByJFYmeZ6.png)
+1. You can connect our Web Application 
+  http://120.108.204.50:5000/
+2. Enter desired address in Input
 
+3. Press Sumit
+
+4. Wait some Time
+
+http://120.108.204.50:5000/
 
 ## Error fix
 - if error message is Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
