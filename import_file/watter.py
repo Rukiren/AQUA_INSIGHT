@@ -90,7 +90,7 @@ def caculator_River_info(name):
                     PRI_NAME = "嚴重污染"
     return(pH, Water_temperature, PRI, PRI_NAME)
 
-def get_River_photo(x, y)
+def get_River_photo(x, y):
     KEY = "dS5EGVg8Gz0PhFm35iDLM7La5FnGTk4fJtF7ooGc"
     with open('River_data.json', 'r') as file:
         data = json.load(file)
