@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <script src="../static/map.js"></script>
+
+    <!-- css include format
+    <link rel="stylesheet" href="{{url_for('static',filename='get/style.css')}}"> 
+-->
+    <link rel="stylesheet" href="{{url_for('static',filename='lib/css/module.css')}}">
+</head>
+
+<body>
+    <img src="/static/images/00.PNG"/>
+
+    <form method="get" action="/search">
+        <input type="text" name="address">
+        <br>
+        <button type="submit">送出地址</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+
+    <script src="../static/water.json"></script>
+    <script src="../static/weather.json"></script>
+    <script src="../static/animal.json"></script>
+
+    <!-- css include format
+    <link rel="stylesheet" href="{{url_for('static',filename='get/style.css')}}"> 
+-->
+    <link rel="stylesheet" href="./lib/css/module.css">
+</head>
+
+<body>
+    <img src="./lib/images/00.PNG" />
+
+    <script src="../static/script.js"></script>
+
+    <form method="get" action="/search">
+        <input type="text" name="address">
+
+        <br>
+        <button type="submit">送出地址（Submit）</button>
+
+    </form>
+
+    <div id="weather">
+        <h1>天氣（Weather）</h1>
+    </div>
+
+    <div id="water">
+        <h1>附近河流資訊（River）</h1>
+    </div>
+
+    <div id="animal">
+        <h1>出沒生物資訊（Species Occurrence Information）</h1>
+    </div>
+
+</body>
+
+</html>
