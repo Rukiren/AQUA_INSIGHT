@@ -5,6 +5,9 @@ import wikipediaapi
 from . import command
 import json
 import ast
+from translate import Translator
+
+
 
 #將維基百科資訊段落存進list
 def load_sections(sections, title_list, content_list, level=0):
@@ -93,7 +96,7 @@ def search(uuid):
                     # 瀕危指數
                     if result == "categoryIUCN":
                         if(data[result] == None):
-                            IUCN_list.append("目前尚無紀錄")
+                            IUCN_list.append("No data")
                         else:
                             IUCN_list.append(data[result]) #將瀕危指數等級存成一個list
                     
@@ -131,12 +134,12 @@ def search(uuid):
     
     #從學名抓取wikipedia物種介紹
     for i in name_list: 
-        wiki_wiki = wikipediaapi.Wikipedia('MyProjectName (merlin@example.com)', 'zh')
+        wiki_wiki = wikipediaapi.Wikipedia('MyProjectName (merlin@example.com)', 'en')
         page_py = wiki_wiki.page(i)
         
         if page_py.exists():
         # Filtering out the "下属物种" section
-            filtered_sections = [section for section in page_py.sections if section.title != '下属物种']
+            filtered_sections = [section for section in page_py.sections if section.title != 'Children with uncertain position']
             load_sections(filtered_sections, title_list, content_list) # 將維基百科資訊段落存進list
         else:
             print("Wiki - {} 資料抓取失敗".format(i))

@@ -16,7 +16,7 @@ fetch('/static/weather.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "current_time_title") //給元素id
-    create_element.innerHTML = "現在時間";
+    create_element.innerHTML = "Time";
     document.getElementById("weather").appendChild(create_element); //添加至id=weather的div元素裡面
 
     create_element = document.createElement("p");
@@ -28,7 +28,7 @@ fetch('/static/weather.json', {
 
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "probability_of_precipitation_title") //給元素id
-    create_element.innerHTML = "降雨機率";
+    create_element.innerHTML = "rain probability";
     document.getElementById("weather").appendChild(create_element); //添加至id=weather的div元素裡面
 
     create_element = document.createElement("p");
@@ -40,7 +40,7 @@ fetch('/static/weather.json', {
 
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "weather_info_title") //給元素id
-    create_element.innerHTML = "天氣預報";
+    create_element.innerHTML = "weather forecast";
     document.getElementById("weather").appendChild(create_element); //添加至id=weather的div元素裡面
 
     create_element = document.createElement("p");
@@ -68,7 +68,7 @@ fetch('/static/water.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "river_name_title") //給元素id
-    create_element.innerHTML = "水域名稱";
+    create_element.innerHTML = "name";
     document.getElementById("water").appendChild(create_element); //添加至id=water的div元素裡面
 
     create_element = document.createElement("p");
@@ -80,7 +80,7 @@ fetch('/static/water.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "pH_title") //給元素id
-    create_element.innerHTML = "pH值";
+    create_element.innerHTML = "pH";
     document.getElementById("water").appendChild(create_element); //添加至id=water的div元素裡面
 
     create_element = document.createElement("p");
@@ -92,7 +92,7 @@ fetch('/static/water.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "water_temperature_title") //給元素id
-    create_element.innerHTML = "水溫";
+    create_element.innerHTML = "Water Temperature";
     document.getElementById("water").appendChild(create_element); //添加至id=water的div元素裡面
 
     create_element = document.createElement("p");
@@ -104,7 +104,7 @@ fetch('/static/water.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "pollution_level_title") //給元素id
-    create_element.innerHTML = "PRI值";
+    create_element.innerHTML = "PRI";
     document.getElementById("water").appendChild(create_element); //添加至id=water的div元素裡面
 
     create_element = document.createElement("p");
@@ -116,7 +116,7 @@ fetch('/static/water.json', {
     
     create_element = document.createElement("h3");
     create_element.setAttribute("id", "pollution_level_name_title") //給元素id
-    create_element.innerHTML = "汙染程度";
+    create_element.innerHTML = "pollution level";
     document.getElementById("water").appendChild(create_element); //添加至id=water的div元素裡面
 
     create_element = document.createElement("p");
@@ -161,7 +161,7 @@ fetch('/static/animal.json', {
 
         create_element = document.createElement("h3");
         create_element.setAttribute("id", "animal_name_title") //給元素id
-        create_element.innerHTML = "物種名稱";
+        create_element.innerHTML = "name";
         document.getElementById(precent_div).appendChild(create_element); //添加至id=water的div元素裡面
 
         //建立p元素，內容為物種名稱
@@ -182,7 +182,7 @@ fetch('/static/animal.json', {
 
         create_element = document.createElement("h3");
         create_element.setAttribute("id", "danger_title") //給元素id
-        create_element.innerHTML = "瀕危程度";
+        create_element.innerHTML = "endangerment status";
         document.getElementById(precent_div).appendChild(create_element); //添加至id=water的div元素裡面
 
         //
@@ -197,7 +197,7 @@ fetch('/static/animal.json', {
 
         create_element = document.createElement("h3");
         create_element.setAttribute("id", "info_title") //給元素id
-        create_element.innerHTML = "物種介紹";
+        create_element.innerHTML = "Info";
         document.getElementById(precent_div).appendChild(create_element); //添加至id=water的div元素裡面
 
         info_div = String("animal_info_" + count)

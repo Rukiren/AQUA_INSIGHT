@@ -30,7 +30,7 @@ def weather (lat,lon):
     pop=hourly[0]["pop"]
     #print(pop)
     #print("------------------------------------------------------------------------------------------------")
-    opt = command.gpt35("你是一名氣象預報專家，請依據輸入的各項數值，給出當日簡短的天氣建議，使用繁體中文", str(current))
+    opt = command.gpt35("你是一名氣象預報專家，請依據輸入的各項數值，給出當日簡短的天氣建議，使用英文", str(current))
     #
     # print(opt)
     #print(type())

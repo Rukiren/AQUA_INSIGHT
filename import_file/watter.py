@@ -1,6 +1,7 @@
 import requests
 import json
 from geopy.distance import geodesic
+from . import command
 
 def get_River_info():
     """ 
@@ -48,7 +49,7 @@ def get_name(x, y):
         if distance < min_distance:
             min_distance = distance
             name = i["river"]
-
+    name = name +"("+ command.gpt35("你是名翻譯員，請將輸入的河流名稱轉換為正確的英文河流名稱，使用英文", name)+")"
     return name
 
 def caculator_River_info(name):
@@ -81,13 +82,13 @@ def caculator_River_info(name):
             elif i["itemname"] == "河川污染分類指標":
                 PRI = float(i["itemvalue"])
                 if PRI < 1:
-                    PRI_NAME = "未（稍）受污染"
+                    PRI_NAME = "Slightly uncontaminated."
                 elif PRI < 3:
-                    PRI_NAME = "輕度污染"
+                    PRI_NAME = "Mild pollution"
                 elif PRI < 6:
-                    PRI_NAME = "中度污染"
+                    PRI_NAME = "Moderate pollution"
                 else:
-                    PRI_NAME = "嚴重污染"
+                    PRI_NAME = "Severe pollution"
     return(pH, Water_temperature, PRI, PRI_NAME)
 
 def get_River_photo(x, y):

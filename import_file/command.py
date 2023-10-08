@@ -3,7 +3,7 @@ import requests
 import openai
 
 # 設定 OpenAI API 的金鑰
-OPENAI_API_KEY = "//change to your key//"
+OPENAI_API_KEY = "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"
 
 # 初始化 OpenAI API
 openai.api_key = OPENAI_API_KEY
