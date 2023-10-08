@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <script src="../static/map.js"></script>
+
+    <!-- css include format
+    <link rel="stylesheet" href="{{url_for('static',filename='get/style.css')}}"> 
+-->
+    <link rel="stylesheet" href="{{url_for('static',filename='lib/css/module.css')}}">
+</head>
+
+<body>
+    <img src="/static/images/00.PNG"/>
+    <div>
+        <h1>AQUA INSIGHT - DIVE DEEP INTO YOUR AQUATIC ENVIRONMENT</h1>
+        <p>Pleas Enter a Address/landmark</p>
+        <p>And wait for 30 sec ~ 1 min</p>
+    </div>
+    <form method="get" action="/search">
+        <input type="text" name="address">
+        <br>
+        <button type="submit">送出地址</button>
+    </form>
+
+    <form action="/search" method="get" id="coord_form">
+      <input id="x" type="hidden" name="lat" value="">
+      <input id="y" type="hidden" name="lon" value="">
+    </form>
+
+
+</body>
+
+</html>
