@@ -1,3 +1,7 @@
+You can try to our DEMO:
+http://120.108.204.50:5000/
+(if this is can not connect, Please clone this and build it to try)
+
 How to Use This?
 
 1. go to import_file/command.py
