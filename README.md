@@ -1,4 +1,4 @@
-You can try to our DEMO:
+You can try to our DEMO
 http://34.68.217.10:5000/
 (if this is can not connect, Please clone repositories this and build it to try)
 
