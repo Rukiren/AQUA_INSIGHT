@@ -5,7 +5,6 @@ import wikipediaapi
 from . import command
 import json
 import ast
-from translate import Translator
 
 
 
