@@ -1,5 +1,5 @@
 You can try to our DEMO:
-http://120.108.204.50:5000/
+http://34.68.217.10/
 (if this is can not connect, Please clone repositories this and build it to try)
 
 ## How to Build This?
@@ -17,7 +17,7 @@ OPENAI_API_KEY = "//Your open api key//"
 
 ## How to use this web
 1. You can connect our Web Application 
-  http://120.108.204.50:5000/
+  http://34.68.217.10/
 2. Enter desired address in Input
 
 3. Press Sumit
